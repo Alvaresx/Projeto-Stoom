@@ -1,0 +1,45 @@
+.footerContainer {
+    height: calc(100vh - 100px);
+    background-color: #222;
+    color: #d3d3d3;
+    display: flex;
+    padding: 10px;
+}
+
+.footerImageBox {
+    width: 30%;
+}
+
+.footerImage {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.footerTextBox {
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-left: 10px;
+    padding: 50px;
+    flex: 2 1;
+}
+
+.footerColumn {
+    padding: 0 20px;
+    text-align: center;
+    flex: 1 1;
+}
+
+.footerTitle {
+    font-size: 24px;
+    text-align: left;
+}
+
+.footerColumnTitle {
+    color: #b7903c;
+    font-size: 18px;
+}
+
+
+
