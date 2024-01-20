@@ -1,0 +1,49 @@
+.pizzaListContainer {
+    padding: 20px 10px;
+}
+
+.pizzaListTitle {
+    color: #000;
+    font-size: 32px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.pizzaListSubtitle {
+    font-size: 16px;
+    margin: 16px 0;
+    text-align: center;
+}
+
+.pizzaListCardContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    cursor: pointer;
+}
+
+.pizzaListCard {
+    padding: 20px 40px;
+
+    img {
+        width: 140px;
+    }
+
+    h2 {
+        color: #d1411e;
+        font-size: 18px;
+        margin: 12px 0;
+    }
+
+    span {
+        color: #666;
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    p {
+        color: #777;
+        margin: 16px 0;
+    }
+
+}
