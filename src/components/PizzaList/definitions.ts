@@ -3,7 +3,14 @@ import pizza02 from "../../img/pizza02.jpg";
 import pizza03 from "../../img/pizza03.jpg";
 import pizza04 from "../../img/pizza04.jpg";
 
-export const pizzasFlavors = [
+export type PizzaFlavors = {
+    image: string;
+    name: string;
+    price: string;
+    description: string;
+}
+
+export const pizzasFlavors: Array<PizzaFlavors> = [
     {
         image: pizza02,
         name: "Margherita Especial",
