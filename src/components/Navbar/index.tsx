@@ -13,13 +13,13 @@ const Navbar = () => {
           <span>(12) 3456-7890</span>
         </div>
       </div>
-      <a href="#header" className={styles.navbarItemMenu}>
+      <a href="/#header" className={styles.navbarItemMenu}>
         Home
       </a>
-      <a href="#pizza-list" className={styles.navbarItemMenu}>
+      <a href="/#pizza-list" className={styles.navbarItemMenu}>
         Produtos
       </a>
-      <a href="#footer" className={styles.navbarItemMenu}>
+      <a href="/#footer" className={styles.navbarItemMenu}>
         Onde Estamos
       </a>
       <div className={styles.navbarItem}>

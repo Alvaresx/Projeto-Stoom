@@ -4,7 +4,7 @@ import { PizzaFlavors } from "../PizzaList/definitions";
 
 const PizzaInfo = () => {
   const [pizzaInfo] = useState<PizzaFlavors>(
-    JSON.parse(localStorage.getItem("pizzaInfo") || "")
+    JSON.parse(localStorage.getItem("selectedPizzaInfo") || "")
   );
 
   return (

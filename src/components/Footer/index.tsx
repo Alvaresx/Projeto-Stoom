@@ -22,7 +22,7 @@ const Footer = () => {
         <div className={styles.footerColumn}>
           <h2 className={styles.footerColumnTitle}>Onde Estamos</h2>
           {address.map((item) => (
-            <p>
+            <p key={item.street}>
               {item.street}
               <br />
               {item.neighborhood}
