@@ -1,16 +1,17 @@
 import "./App.css";
-import Footer from "./components/Footer";
-import Header from "./components/Header";
+import { BrowserRouter } from "react-router-dom";
 import Navbar from "./components/Navbar";
-import PizzaList from "./components/PizzaList";
+import Footer from "./components/Footer";
+import Routes from "../src/routes";
 
 function App() {
   return (
     <>
-      <Navbar />
-      <Header />
-      <PizzaList />
-      <Footer />
+      <BrowserRouter>
+        <Navbar />
+        <Routes />
+        <Footer />
+      </BrowserRouter>
     </>
   );
 }
