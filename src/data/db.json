@@ -1,0 +1,85 @@
+{
+  "pizzaSizes": [
+    {
+      "id": 30,
+      "size": 30
+    },
+    {
+      "id": 35,
+      "size": 35
+    },
+    {
+      "id": 40,
+      "size": 40
+    }
+  ],
+  "pizzaDoughs": [
+    {
+      "id": "fina",
+      "dough": "Fina"
+    },
+    {
+      "id": "grossa",
+      "dough": "Grossa"
+    }
+  ],
+  "pizzaFlavors": [
+    {
+      "image": "/src/img/pizza02.jpg",
+      "name": "Margherita Especial",
+      "price": "R$25,00",
+      "description": "A clássica Margherita com muçarela de búfala fresca, tomates suculentos e manjericão."
+    },
+    {
+      "image": "/src/img/pizza01.jpg",
+      "name": "Pepperoni Picante",
+      "price": "R$28,00",
+      "description": "Uma explosão de sabor com generosas fatias de pepperoni e pimenta jalapeño."
+    },
+    {
+      "image": "/src/img/pizza04.jpg",
+      "name": "Vegetariana Delícia",
+      "price": "R$26,00",
+      "description": "Repleta de vegetais frescos, incluindo cogumelos, pimentões, cebola e azeitonas."
+    },
+    {
+      "image": "/src/img/pizza03.jpg",
+      "name": "Quatro Queijos",
+      "price": "R$30,00",
+      "description": "Uma combinação divina de muçarela, gorgonzola, parmesão e provolone."
+    },
+    {
+      "image": "/src/img/pizza01.jpg",
+      "name": "Frango com Pesto",
+      "price": "R$27,50",
+      "description": "Peito de frango suculento, molho pesto, tomate cereja e queijo feta."
+    },
+    {
+      "image": "/src/img/pizza04.jpg",
+      "name": "Calabresa",
+      "price": "R$29,00",
+      "description": "Calabresa defumada, pimentões coloridos e cebola roxa, tudo com um toque picante."
+    },
+    {
+      "image": "/src/img/pizza03.jpg",
+      "name": "Mediterrânea",
+      "price": "R$31,50",
+      "description": "Inspirada na culinária mediterrânea, com azeitonas kalamata, tomate seco e queijo feta."
+    },
+    {
+      "image": "/src/img/pizza02.jpg",
+      "name": "Pizza do Chef",
+      "price": "R$33,00",
+      "description": "Uma seleção especial do chef, com ingredientes sazonais e surpresas deliciosas."
+    }
+  ],
+  "pizzaRecommendation": [
+    {
+      "image": "/src/img/pizza01.jpg",
+      "name": "Portuguesa",
+      "price": "R$32,00",
+      "description": "A clássica Portuguesa com presunto, ovos e cebola.",
+      "points": 50
+    }
+  ]
+}
