@@ -3,7 +3,7 @@ import styles from "./style.module.css";
 
 const PizzaList = () => {
   return (
-    <div className={styles.pizzaListContainer}>
+    <div id="pizza-list" className={styles.pizzaListContainer}>
       <h1 className={styles.pizzaListTitle}>A Melhor Pizza da Cidade</h1>
       <p className={styles.pizzaListSubtitle}>
         Saboreie a excelência em cada pedaço – a melhor pizza da cidade está

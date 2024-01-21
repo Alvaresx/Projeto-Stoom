@@ -4,7 +4,7 @@ import { address } from "./definitions";
 
 const Footer = () => {
   return (
-    <div className={styles.footerContainer}>
+    <div id="footer" className={styles.footerContainer}>
       <div className={styles.footerImageBox}>
         <img
           alt="Pessoa ralando um pedaço de queijo em cima de uma pizza"
