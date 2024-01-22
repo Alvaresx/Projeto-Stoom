@@ -1,6 +1,6 @@
 export type PizzaFlavors = {
-    image: string;
-    name: string;
-    price: string;
-    description: string;
-}
+  image: string;
+  name: string;
+  price: number;
+  description: string;
+};
