@@ -1,0 +1,171 @@
+.reviewOrderContainer {
+    height: calc(100vh - 100px);
+
+    h1 {
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 300;
+        margin: 10px 0;
+    }
+}
+
+.reviewOrderCardsContainer {
+    display: flex;
+    gap: 40px;
+    padding: 20px 40px;
+    position: relative;
+    flex-direction: column;
+    max-width: 50%;
+    margin: 0 auto;
+}
+
+.reviewOrderCardInfo {
+    height: 40%;
+    border: 1px solid grey;
+    border-radius: 16px;
+    padding: 20px 10px 10px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 5px 5px 5px #0000002b;
+
+    h4 {
+        margin: 0 0 10px;
+    }
+
+    p {
+        margin: 0;
+        line-height: 1.7;
+
+        span {
+            color:#d1411e;
+            font-weight: 600;
+        }
+    }
+}
+
+.reviewOrderCardRecommendation {
+    height: 40%;
+    border: 1px solid grey;
+    border-radius: 16px;
+    padding: 10px;
+    display: flex;
+    box-shadow: 5px 5px 5px #0000002b;
+
+    h2 {
+        margin: 0;
+    }
+
+    p:nth-child(3) {
+        font-size: 12px;
+        color: #d86d52;
+    }
+
+    img {
+        width: 200px;
+        object-fit: contain;
+    }
+
+    span {
+        color: green;
+        font-weight: 500;
+    }
+
+    svg  {
+        position: absolute;
+        top: 187px;
+        right: 0px;
+        width: 80px;
+        height: 80px;
+    }
+
+    .reviewOrderCardPoints {
+        color: #f5f5f5;
+        position: absolute;
+        top: 218px;
+        right: 12px;
+        font-size: 12px;
+    }
+
+    button {
+        border: 0;
+        color: #f5f5f5;
+        border-radius: 16px;
+        padding: 6px;
+        display: flex;
+        margin-top: 16px;
+        cursor: pointer;
+    }
+
+    button:hover {
+        transition: 0.3s;
+    }
+
+    .reviewOrderButtonRed {
+        background-color: red;
+    }
+
+    .reviewOrderButtonRed:hover {
+        background-color: rgb(210, 54, 54);
+    }
+
+    .reviewOrderButtonGreen {
+        background-color: green;
+    }
+
+    .reviewOrderButtonGreen:hover {
+        background-color: rgb(15, 91, 15);
+    }
+
+    
+}
+
+.reviewOrderButtons {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 0 40px;
+
+    a {
+        color: #f5f5f5;
+        border-radius: 16px;
+        background-color: green;
+        font-size: 16px;
+        text-decoration: none;
+        height: 40px;
+        display: inline-flex;
+        align-items: center;
+        padding-bottom: 2px;
+        width: 80px;
+        justify-content: center;
+    }
+
+    a:hover {
+        background-color: rgb(15, 91, 15);
+        transition: 0.3s;
+    }
+}
+
+.reviewOrderCardTitle {
+    position: absolute;
+    background-color: cornflowerblue;
+    border-radius: 16px;
+    padding: 4px;
+    color: #f5f5f5;
+    font-weight: 600;
+    width: 155px;
+    text-align: center;
+    top: 213px;
+}
+
+.reviewOrderCardInfoTitle {
+    position: absolute;
+    background-color: cornflowerblue;
+    border-radius: 16px;
+    padding: 4px;
+    color: #f5f5f5;
+    font-weight: 600;
+    width: 155px;
+    text-align: center;
+    top: 7px;
+}
