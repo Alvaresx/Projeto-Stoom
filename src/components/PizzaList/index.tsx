@@ -25,8 +25,8 @@ const PizzaList = () => {
 
   return (
     <div id="pizza-list" className={styles.pizzaListContainer}>
-      <h1 className={styles.pizzaListTitle}>A Melhor Pizza da Cidade</h1>
-      <p className={styles.pizzaListSubtitle}>
+      <h1>A Melhor Pizza da Cidade</h1>
+      <p>
         Saboreie a excelência em cada pedaço – a melhor pizza da cidade está
         aqui!
       </p>
