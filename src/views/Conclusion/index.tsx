@@ -1,7 +1,13 @@
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import styles from "./style.module.css";
+import { useEffect } from "react";
 
 const ConclusionView = () => {
+  useEffect(() => {
+    localStorage.removeItem("orderInfo");
+    localStorage.removeItem("selectedPizzaInfo");
+  }, []);
+
   return (
     <div className={styles.conclusionViewContainer}>
       <RiVerifiedBadgeFill color="green" />
