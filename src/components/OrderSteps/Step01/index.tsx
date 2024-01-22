@@ -24,10 +24,12 @@ const OrderStep01 = () => {
 
   const selectPizzaSize = (size: number) => {
     setSelectedPizzaSize(size);
-    const orderInfo = {
+    const orderInfo = JSON.parse(localStorage.getItem("orderInfo") || "");
+    const newInfo = {
+      ...orderInfo,
       size,
     };
-    localStorage.setItem("orderInfo", JSON.stringify(orderInfo));
+    localStorage.setItem("orderInfo", JSON.stringify(newInfo));
   };
 
   useEffect(() => {
@@ -42,7 +44,7 @@ const OrderStep01 = () => {
       <p>Escolha o tamanho da sua pizza:</p>
       <div className={styles.orderStepPizzaOptions}>
         {pizzaSizes.map((item) => (
-          <>
+          <div key={item.id}>
             <GiFullPizza
               size={item.size}
               onClick={() => selectPizzaSize(item.size)}
@@ -51,7 +53,7 @@ const OrderStep01 = () => {
             <span
               className={getTagClassName(item.size)}
             >{`${item.size}cm`}</span>
-          </>
+          </div>
         ))}
       </div>
 

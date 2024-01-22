@@ -4,7 +4,16 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 
 const OrderStep03 = () => {
-  const [pizzaQuantity, setPizzaQuantity] = useState<number>(0);
+  const [pizzaQuantity, setPizzaQuantity] = useState<number>(1);
+
+  const selectPizzaQuantity = () => {
+    const orderInfo = JSON.parse(localStorage.getItem("orderInfo") || "");
+    const newInfo = {
+      ...orderInfo,
+      quantity: pizzaQuantity,
+    };
+    localStorage.setItem("orderInfo", JSON.stringify(newInfo));
+  };
 
   return (
     <div className={styles.orderStepOptions}>
@@ -24,7 +33,9 @@ const OrderStep03 = () => {
       </div>
       <div className={styles.orderStepButtons}>
         <Link to="/order/dough">Voltar</Link>
-        <Link to="/order/conclusion">Finalizar</Link>
+        <Link to="/order/review" onClick={() => selectPizzaQuantity()}>
+          Revisar
+        </Link>
       </div>
     </div>
   );

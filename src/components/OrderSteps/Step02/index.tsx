@@ -23,10 +23,12 @@ const OrderStep02 = () => {
 
   const selectPizzaDough = (dough: string) => {
     setSelectedPizzaDough(dough);
-    const orderInfo = {
+    const orderInfo = JSON.parse(localStorage.getItem("orderInfo") || "");
+    const newInfo = {
+      ...orderInfo,
       dough,
     };
-    localStorage.setItem("orderInfo", JSON.stringify(orderInfo));
+    localStorage.setItem("orderInfo", JSON.stringify(newInfo));
   };
 
   useEffect(() => {
@@ -41,7 +43,7 @@ const OrderStep02 = () => {
       <p>Escolha o tipo de massa:</p>
       <div className={styles.orderStepPizzaOptions}>
         {pizzaDoughs.map((item) => (
-          <>
+          <div key={item.id}>
             <IoPizza
               size={30}
               onClick={() => selectPizzaDough(item.dough)}
@@ -49,7 +51,7 @@ const OrderStep02 = () => {
               stroke={getIconColor(item.dough)}
             />
             <span className={getTagClassName(item.dough)}>{item.dough}</span>
-          </>
+          </div>
         ))}
       </div>
       <div className={styles.orderStepButtons}>
