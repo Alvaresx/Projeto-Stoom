@@ -24,7 +24,7 @@ const OrderStep02 = () => {
 
   const selectPizzaDough = (dough: string) => {
     setSelectedPizzaDough(dough);
-    setOrderInfoLocalStorage("orderInfo", "dought", dough);
+    setOrderInfoLocalStorage("orderInfo", "dough", dough);
   };
 
   useEffect(() => {

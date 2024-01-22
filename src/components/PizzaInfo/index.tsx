@@ -1,13 +1,11 @@
-import { useState } from "react";
 import styles from "./style.module.css";
 import { PizzaFlavors } from "../PizzaList/definitions";
 import { currencyFormatter } from "../../utils/currencyFormatter";
 import { getParsedItemLocalStorage } from "../../utils/getParsedItemLocalStorage";
 
 const PizzaInfo = () => {
-  const [pizzaInfo] = useState<PizzaFlavors>(
-    getParsedItemLocalStorage("selectedPizzaInfo")
-  );
+  const pizzaInfo: PizzaFlavors =
+    getParsedItemLocalStorage("selectedPizzaInfo");
 
   return (
     <>
