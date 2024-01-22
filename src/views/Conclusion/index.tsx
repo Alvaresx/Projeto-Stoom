@@ -16,7 +16,7 @@ const ConclusionView = () => {
         Parabéns! Seu pedido de pizza foi concluído com sucesso. Agora é só
         aguardar e aproveitar o sabor incrível que em breve estará a caminho!
       </p>
-      <div className={styles.conclusionViewButtons}>
+      <div className={styles.conclusionViewButton}>
         <Link to="/">Voltar para a home</Link>
       </div>
     </div>

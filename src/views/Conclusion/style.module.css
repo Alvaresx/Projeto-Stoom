@@ -11,29 +11,31 @@
     }
 
     p {
-        font-size: 30px;
+        font-size: 20px;
         width: 60%;
         text-align: center;
     }
 }
 
-.conclusionViewButtons {
+.conclusionViewButton {
     display: flex;
-    gap: 20px;
 
     a {
         color: #f5f5f5;
         border-radius: 16px;
         background-color: green;
-        font-size: 16px;
-        border: 0;
         padding: 10px 20px;
-        cursor: pointer;
         text-decoration: none;
     }
 
     a:hover {
         background-color: rgb(15, 91, 15);
         transition: 0.3s;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .conclusionViewContainer > p {
+            font-size: 30px;
     }
 }
