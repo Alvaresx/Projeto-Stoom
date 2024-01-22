@@ -8,7 +8,7 @@ const Navbar = () => {
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbarItem}>
-        <div className={styles.navbarPhoneIcon}>
+        <div className={styles.navbarIcon}>
           <FaPhone />
         </div>
         <div>
@@ -26,7 +26,7 @@ const Navbar = () => {
         Onde Estamos
       </a>
       <div className={styles.navbarItem}>
-        <div className={styles.navbarPhoneIcon}>
+        <div className={styles.navbarIcon}>
           <FaCoins />
         </div>
         <div>
