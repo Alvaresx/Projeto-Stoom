@@ -5,6 +5,7 @@ import OrderStep01 from "../components/OrderSteps/Step01";
 import OrderStep02 from "../components/OrderSteps/Step02";
 import OrderStep03 from "../components/OrderSteps/Step03";
 import ConclusionView from "../views/Conclusion";
+import ReviewOrderView from "../views/ReviewOrder";
 
 const routes = () => (
   <>
@@ -22,6 +23,7 @@ const routes = () => (
         path="/order/quantity"
         element={<OrderView children={<OrderStep03 />} />}
       />
+      <Route path="/order/review" element={<ReviewOrderView />} />
       <Route path="/order/conclusion" element={<ConclusionView />} />
     </Routes>
   </>
