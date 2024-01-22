@@ -1,12 +1,11 @@
 .orderStepOptions {
-    position: relative;
-
     p {
         font-weight: 600;
     }
 
     svg {
         margin-right: 30px;
+        cursor: pointer;
     }
 
     svg:hover {
@@ -16,9 +15,8 @@
 
 .orderStepPizzaOptions {
     display: flex;
-    align-items: flex-start;
-    cursor: pointer;
     height: 50px;
+    position: relative;
 
     span {
         position: absolute;
@@ -27,7 +25,7 @@
         font-size: 12px;
         padding: 0 4px;
         border-radius: 4px;
-        top: 34px;
+        top: -6px;
     }
 
     .orderStepPizzaTagOne {
@@ -45,8 +43,6 @@
 
 .orderStepPizzaQuantity {
     display: flex;
-    align-items: flex-start;
-    cursor: pointer;
     height: 50px;
 
     svg {
