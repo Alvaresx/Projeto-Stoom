@@ -61,7 +61,11 @@ const ReviewOrderView = () => {
       <h1>Quase pronto! Vamos revisar?</h1>
       <div className={styles.reviewOrderCardsContainer}>
         <div className={styles.reviewOrderCardInfo}>
-          <div className={styles.reviewOrderCardInfoTitle}>Suas escolhas:</div>
+          <div
+            className={`${styles.reviewOrderCardInfoTitle} ${styles.reviewOrderCardTitle}`}
+          >
+            Suas escolhas:
+          </div>
           <p>
             <span>Sabor da pizza:</span> {orderInfo.flavor}
           </p>
@@ -89,7 +93,11 @@ const ReviewOrderView = () => {
           <span
             className={styles.reviewOrderCardPoints}
           >{`${pizzaRecommendation.points} pontos`}</span>
-          <div className={styles.reviewOrderCardTitle}>Pizza do Dia</div>
+          <div
+            className={`${styles.reviewOrderCardRecommendationTitle} ${styles.reviewOrderCardTitle}`}
+          >
+            Pizza do Dia
+          </div>
 
           <img src={pizzaRecommendation.image} />
 
