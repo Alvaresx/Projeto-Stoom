@@ -1,6 +1,7 @@
 import { RiVerifiedBadgeFill } from "react-icons/ri";
 import styles from "./style.module.css";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const ConclusionView = () => {
   useEffect(() => {
@@ -16,8 +17,7 @@ const ConclusionView = () => {
         aguardar e aproveitar o sabor incrível que em breve estará a caminho!
       </p>
       <div className={styles.conclusionViewButtons}>
-        <button type="button">Voltar para a home</button>
-        <button type="button">Fazer novo pedido</button>
+        <Link to="/">Voltar para a home</Link>
       </div>
     </div>
   );
