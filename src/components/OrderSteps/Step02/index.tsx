@@ -3,6 +3,7 @@ import styles from "../style.module.css";
 import { IoPizza } from "react-icons/io5";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { setOrderInfoLocalStorage } from "../../../utils/setOrderInfoLocalStorage";
 
 type PizzaDoughs = {
   id: string;
@@ -23,12 +24,7 @@ const OrderStep02 = () => {
 
   const selectPizzaDough = (dough: string) => {
     setSelectedPizzaDough(dough);
-    const orderInfo = JSON.parse(localStorage.getItem("orderInfo") || "");
-    const newInfo = {
-      ...orderInfo,
-      dough,
-    };
-    localStorage.setItem("orderInfo", JSON.stringify(newInfo));
+    setOrderInfoLocalStorage("orderInfo", "dought", dough);
   };
 
   useEffect(() => {

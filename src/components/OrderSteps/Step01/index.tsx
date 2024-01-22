@@ -3,6 +3,7 @@ import styles from "../style.module.css";
 import { GiFullPizza } from "react-icons/gi";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import { setOrderInfoLocalStorage } from "../../../utils/setOrderInfoLocalStorage";
 
 type PizzaSizes = {
   id: number;
@@ -24,12 +25,7 @@ const OrderStep01 = () => {
 
   const selectPizzaSize = (size: number) => {
     setSelectedPizzaSize(size);
-    const orderInfo = JSON.parse(localStorage.getItem("orderInfo") || "");
-    const newInfo = {
-      ...orderInfo,
-      size,
-    };
-    localStorage.setItem("orderInfo", JSON.stringify(newInfo));
+    setOrderInfoLocalStorage("orderInfo", "size", size);
   };
 
   useEffect(() => {

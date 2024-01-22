@@ -2,18 +2,10 @@ import styles from "../style.module.css";
 import { FaPlus, FaMinus } from "react-icons/fa6";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import { setOrderInfoLocalStorage } from "../../../utils/setOrderInfoLocalStorage";
 
 const OrderStep03 = () => {
-  const [pizzaQuantity, setPizzaQuantity] = useState<number>(1);
-
-  const selectPizzaQuantity = () => {
-    const orderInfo = JSON.parse(localStorage.getItem("orderInfo") || "");
-    const newInfo = {
-      ...orderInfo,
-      quantity: pizzaQuantity,
-    };
-    localStorage.setItem("orderInfo", JSON.stringify(newInfo));
-  };
+  const [quantity, setQuantity] = useState<number>(1);
 
   return (
     <div className={styles.orderStepOptions}>
@@ -21,19 +13,24 @@ const OrderStep03 = () => {
       <div className={styles.orderStepPizzaQuantity}>
         <FaMinus
           onClick={() => {
-            if (pizzaQuantity) setPizzaQuantity(pizzaQuantity - 1);
+            if (quantity) setQuantity(quantity - 1);
           }}
         />
         <input
           type="number"
-          value={pizzaQuantity}
-          onChange={(e) => setPizzaQuantity(parseInt(e.target.value))}
+          value={quantity}
+          onChange={(e) => setQuantity(parseInt(e.target.value))}
         />
-        <FaPlus onClick={() => setPizzaQuantity(pizzaQuantity + 1)} />
+        <FaPlus onClick={() => setQuantity(quantity + 1)} />
       </div>
       <div className={styles.orderStepButtons}>
         <Link to="/order/dough">Voltar</Link>
-        <Link to="/order/review" onClick={() => selectPizzaQuantity()}>
+        <Link
+          to="/order/review"
+          onClick={() =>
+            setOrderInfoLocalStorage("orderInfo", "quantity", quantity)
+          }
+        >
           Revisar
         </Link>
       </div>

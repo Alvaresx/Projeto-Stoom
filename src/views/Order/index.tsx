@@ -2,10 +2,11 @@ import styles from "./style.module.css";
 import PizzaInfo from "../../components/PizzaInfo";
 import { useState } from "react";
 import { PizzaFlavors } from "../../components/PizzaList/definitions";
+import { getParsedItemLocalStorage } from "../../utils/getParsedItemLocalStorage";
 
 const OrderView = (props: { children: JSX.Element }) => {
   const [pizzaInfo] = useState<PizzaFlavors>(
-    JSON.parse(localStorage.getItem("selectedPizzaInfo") || "")
+    getParsedItemLocalStorage("selectedPizzaInfo")
   );
 
   return (
