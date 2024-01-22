@@ -10,6 +10,7 @@
     width: 100%;
     box-sizing: border-box;
     box-shadow: 5px 5px 5px #0000002b;
+    z-index: 1;
 }
 
 .navbarItem {

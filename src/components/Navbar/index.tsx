@@ -1,7 +1,10 @@
+import { getParsedItemLocalStorage } from "../../utils/getParsedItemLocalStorage";
 import styles from "./style.module.css";
 import { FaPhone, FaCoins } from "react-icons/fa6";
 
 const Navbar = () => {
+  const stoomPoints = getParsedItemLocalStorage("stoomPoints");
+
   return (
     <div className={styles.navbarContainer}>
       <div className={styles.navbarItem}>
@@ -28,7 +31,7 @@ const Navbar = () => {
         </div>
         <div>
           <p>Stoom Points</p>
-          <span>0 pontos</span>
+          <span>{stoomPoints?.points || 0} pontos</span>
         </div>
       </div>
     </div>
