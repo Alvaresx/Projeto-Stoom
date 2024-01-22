@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./style.module.css";
+import styles from "./style.module.css";
 import { PizzaFlavors } from "../PizzaList/definitions";
 
 const PizzaInfo = () => {
@@ -9,10 +9,12 @@ const PizzaInfo = () => {
 
   return (
     <>
-      <h1>{pizzaInfo.name}</h1>
-      <h2>{pizzaInfo.price}</h2>
-      <p>{pizzaInfo.description}</p>
-      <hr />
+      <div className={styles.pizzaInfoContainer}>
+        <h1>{pizzaInfo.name}</h1>
+        <h2>{pizzaInfo.price}</h2>
+        <p>{pizzaInfo.description}</p>
+        <hr />
+      </div>
     </>
   );
 };
