@@ -1,30 +1,48 @@
-# React + TypeScript + Vite
+# 📝 Teste Desenvolvedor Front-End - Stoom
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📃 Sobre o projeto
 
-Currently, two official plugins are available:
+Este é um projeto baseado no **teste** para o cargo de **Desenvolvedor Front-End**, na empresa **Stoom**. <br/>
+O objetivo do teste é criar uma **aplicação de pizzaria**. 🍕
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+O teste possui diversos **requisitos**, dentre eles estão:
 
-## Expanding the ESLint configuration
+- mostrar **passos** para a **criação de um pedido**, selecionando as opções relacionadas às pizzas;
+- os **dados** das pizzas devem vir **mockados** de um **backend**;
+- apresentar ao usuário uma **recomendação do dia**, que dará pontos a ele;
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+### ⚙️ Tecnologias utilizadas
 
-- Configure the top-level `parserOptions` property like this:
+- React
+- HTML
+- CSS
+- Typescript
+- React Router **(controle de roteamento das páginas da aplicação)**
+- localStorage **(utilizado para persistência de dados)**
+- React Testing Library e Jest **(utilizado para testes unitários)**
+- Json-Server **(criação de endpoints fakes)**
+- React-Icons **(ícones do projeto)**
+- Axios **(comunicação de dados de APIs)**
 
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
-```
+### 🔎 Outras informações
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+O projeto foi criado pensando na **responsividade**, possibilitando ao usuário a utilização da aplicação partindo de qualquer **dispositivo**! 📱💻
+
+Antes de executar o projeto em si, será necessário rodar o comando `npx json-server --watch .\src\data\db.json --port 3031`, que irá subir os endpoints fakes.
+
+Logo após, execute o comando `yarn dev`, acessando o projeto em http://localhost:5173.
+
+### 🚀 Melhorias
+
+- Aplicar mais testes unitários
+- Componentizar alguns elementos
+- Botão na Navbar para atualizar os pontos sem precisar do refresh da página
+- Refatorar a view ReviewOrder
+- Separar os componentes em View e Container, para promover mais organização, separação de tarefas e melhoria na arquitetura
+
+### 🙋‍♀️ Autor
+
+**Mariana Alvares da Silva Pinto** - _Desenvolvedora Front-end Júnior_ </br>
+✉️ **E-mail**: alvares.mariana.p@gmail.com </br>
+📞 **Telefone/Whatsapp:** (24) 999987-7010 </br>
+📌 **Link para acessar o projeto:** https://senfinanca-one.vercel.app/
